@@ -1,0 +1,25 @@
+{
+  "name": "ICEBase",
+  "version": "0.1.3",
+  "summary": "A short description of ICEBase.",
+  "description": "「   converted automatically by plugin cocoapods-bin  」\n TODO: Add long description of the pod here.",
+  "homepage": "https://git.tigerbrokers.net/linbingjie/ICEBase",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "972867381@qq.com": "linbingjie@itiger.com"
+  },
+  "source": {
+    "http": "http://localhost:8080/frameworks/ICEBase/0.1.3/zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "source_files": "bin_ICEBase_0.1.3/Headers/*",
+  "resources": "bin_ICEBase_0.1.3/Resources/*",
+  "public_header_files": "bin_ICEBase_0.1.3/Headers/*.h",
+  "vendored_libraries": "bin_ICEBase_0.1.3/*.a"
+}
