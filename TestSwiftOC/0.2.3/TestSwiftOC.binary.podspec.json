@@ -1,0 +1,29 @@
+{
+  "name": "TestSwiftOC",
+  "version": "0.2.3",
+  "summary": "A short description of TestSwiftOC.",
+  "description": "「   converted automatically by plugin cocoapods-bin  」\n TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/lin333/TestSwiftOC",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "linbingjie": "linbingjie@itiger.com"
+  },
+  "source": {
+    "http": "http://localhost:8080/frameworks/TestSwiftOC/0.2.3/zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "TestSwiftOC/Classes/**/*",
+  "dependencies": {
+    "MJRefresh": [
+
+    ]
+  },
+  "public_header_files": "TestSwiftOC/**/*.{h}",
+  "vendored_frameworks": "TestSwiftOC.framework"
+}
