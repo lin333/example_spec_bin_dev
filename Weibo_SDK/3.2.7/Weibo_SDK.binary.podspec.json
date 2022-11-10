@@ -1,0 +1,42 @@
+{
+  "name": "Weibo_SDK",
+  "homepage": "https://github.com/sinaweibosdk/weibo_ios_sdk",
+  "summary": "WeiboSDK on iOS.",
+  "description": "「   converted automatically by plugin cocoapods-bin  」\n New weibosdk pod.",
+  "authors": {
+    "meimei": "meimei@staff.weibo.com"
+  },
+  "version": "3.2.7",
+  "source": {
+    "http": "http://localhost:8080/frameworks/Weibo_SDK/3.2.7/zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "requires_arc": false,
+  "license": "MIT",
+  "source_files": "libWeiboSDK/*.{h,m}",
+  "resources": [
+    "Weibo_SDK.framework/Resources/WeiboSDK.bundle",
+    "Weibo_SDK.framework/Versions/A/Resources/WeiboSDK.bundle"
+  ],
+  "frameworks": [
+    "Photos",
+    "ImageIO",
+    "SystemConfiguration",
+    "CoreText",
+    "QuartzCore",
+    "Security",
+    "UIKit",
+    "Foundation",
+    "CoreGraphics",
+    "CoreTelephony",
+    "WebKit"
+  ],
+  "libraries": [
+    "sqlite3",
+    "z"
+  ],
+  "vendored_frameworks": "Weibo_SDK.framework"
+}
