@@ -1,0 +1,26 @@
+{
+  "name": "Alamofire",
+  "version": "5.6.2",
+  "license": "MIT",
+  "summary": "Elegant HTTP Networking in Swift",
+  "homepage": "https://github.com/Alamofire/Alamofire",
+  "authors": {
+    "Alamofire Software Foundation": "info@alamofire.org"
+  },
+  "source": {
+    "http": "http://localhost:8080/frameworks/Alamofire/5.6.2/zip",
+    "type": "zip"
+  },
+  "documentation_url": "https://alamofire.github.io/Alamofire/",
+  "platforms": {
+    "ios": "10.0"
+  },
+  "swift_versions": [
+    "5"
+  ],
+  "source_files": "Source/*.swift",
+  "frameworks": "CFNetwork",
+  "vendored_frameworks": "Alamofire.framework",
+  "description": "「   converted automatically by plugin cocoapods-bin  」",
+  "swift_version": "5"
+}
