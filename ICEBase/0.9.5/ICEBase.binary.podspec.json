@@ -1,0 +1,37 @@
+{
+  "name": "ICEBase",
+  "version": "0.9.5",
+  "summary": "A short description of ICEBase.",
+  "description": "「   converted automatically by plugin cocoapods-bin  」\n TODO: Add long description of the pod here.",
+  "homepage": "https://git.tigerbrokers.net/linbingjie/ICEBase",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "972867381@qq.com": "linbingjie@itiger.com"
+  },
+  "source": {
+    "http": "http://localhost:8080/frameworks/ICEBase/0.9.5/zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "source_files": "ICEBase/**/*.{h,m,swift}",
+  "resources": [
+    "ICEBase.framework/Resources/*.bundle",
+    "ICEBase.framework/Resources/*.{json,png,jpg,gif,xib,bundle}",
+    "ICEBase.framework/Versions/A/Resources/*.bundle",
+    "ICEBase.framework/Versions/A/Resources/*.{json,png,jpg,gif,xib,bundle}"
+  ],
+  "dependencies": {
+    "TestSwiftOC": [
+
+    ]
+  },
+  "public_header_files": "ICEBase/**/*.{h}",
+  "swift_versions": "5.0",
+  "vendored_frameworks": "ICEBase.framework",
+  "swift_version": "5.0"
+}
