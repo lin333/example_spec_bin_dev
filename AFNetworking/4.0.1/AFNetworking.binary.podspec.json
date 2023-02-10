@@ -35,8 +35,76 @@
       "PRODUCT_BUNDLE_IDENTIFIER": "com.alamofire.AFNetworking"
     }
   },
-  "source_files": "bin_AFNetworking_4.0.1/Headers/*",
-  "public_header_files": "bin_AFNetworking_4.0.1/Headers/*.h",
-  "vendored_libraries": "bin_AFNetworking_4.0.1/*.a",
-  "description": "「   converted automatically by plugin cocoapods-bin  」"
+  "source_files": "AFNetworking/AFNetworking.h",
+  "deprecated_in_favor_of": "Alamofire",
+  "vendored_frameworks": "AFNetworking.{framework,xcframework}",
+  "description": "converted automatically by plugin optimization",
+  "subspecs": [
+    {
+      "name": "Serialization",
+      "source_files": "AFNetworking/AFURL{Request,Response}Serialization.{h,m}"
+    },
+    {
+      "name": "Security",
+      "source_files": "AFNetworking/AFSecurityPolicy.{h,m}"
+    },
+    {
+      "name": "Reachability",
+      "platforms": {
+        "ios": "9.0",
+        "osx": "10.10",
+        "tvos": "9.0"
+      },
+      "source_files": "AFNetworking/AFNetworkReachabilityManager.{h,m}"
+    },
+    {
+      "name": "NSURLSession",
+      "dependencies": {
+        "AFNetworking/Serialization": [
+
+        ],
+        "AFNetworking/Security": [
+
+        ]
+      },
+      "ios": {
+        "dependencies": {
+          "AFNetworking/Reachability": [
+
+          ]
+        }
+      },
+      "osx": {
+        "dependencies": {
+          "AFNetworking/Reachability": [
+
+          ]
+        }
+      },
+      "tvos": {
+        "dependencies": {
+          "AFNetworking/Reachability": [
+
+          ]
+        }
+      },
+      "source_files": [
+        "AFNetworking/AF{URL,HTTP}SessionManager.{h,m}",
+        "AFNetworking/AFCompatibilityMacros.h"
+      ]
+    },
+    {
+      "name": "UIKit",
+      "platforms": {
+        "ios": "9.0",
+        "tvos": "9.0"
+      },
+      "dependencies": {
+        "AFNetworking/NSURLSession": [
+
+        ]
+      },
+      "source_files": "UIKit+AFNetworking"
+    }
+  ]
 }
