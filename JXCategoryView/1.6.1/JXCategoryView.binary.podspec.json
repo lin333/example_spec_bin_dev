@@ -1,0 +1,24 @@
+{
+  "name": "JXCategoryView",
+  "version": "1.6.1",
+  "summary": "A powerful and easy to use category view (segment view, segment control, page view, scroll viewcontroller)",
+  "homepage": "https://github.com/pujiaxin33/JXCategoryView",
+  "license": "MIT",
+  "authors": {
+    "pujiaxin33": "317437084@qq.com"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source": {
+    "http": "http://localhost:8080/frameworks/JXCategoryView/1.6.1/zip",
+    "type": "zip"
+  },
+  "source_files": [
+    "Sources",
+    "Sources/**/*.{h,m}"
+  ],
+  "requires_arc": true,
+  "vendored_frameworks": "JXCategoryView.{framework,xcframework}",
+  "description": "converted automatically by plugin optimization"
+}
