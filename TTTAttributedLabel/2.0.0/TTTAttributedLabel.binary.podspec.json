@@ -23,6 +23,6 @@
   "source_files": "TTTAttributedLabel",
   "requires_arc": true,
   "social_media_url": "https://twitter.com/mattt",
-  "vendored_frameworks": "TTTAttributedLabel.framework",
-  "description": "「   converted automatically by plugin cocoapods-bin  」"
+  "vendored_frameworks": "TTTAttributedLabel.{framework,xcframework}",
+  "description": "converted automatically by plugin optimization"
 }
