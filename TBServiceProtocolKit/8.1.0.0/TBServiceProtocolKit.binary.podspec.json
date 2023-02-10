@@ -1,0 +1,29 @@
+{
+  "name": "TBServiceProtocolKit",
+  "version": "8.1.0.0",
+  "summary": "A short description of TBServiceProtocolKit.",
+  "description": "converted automatically by plugin optimization\n TODO: Add long description of the pod here.",
+  "homepage": "https://git.tigerbrokers.net/ios/tbserviceprotocolkit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "972867381@qq.com": "linbingjie@itiger.com"
+  },
+  "source": {
+    "http": "http://localhost:8080/frameworks/TBServiceProtocolKit/8.1.0.0/zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "static_framework": true,
+  "pod_target_xcconfig": {
+    "DEFINES_MODULE": "YES"
+  },
+  "swift_versions": "5.0",
+  "source_files": "TBServiceProtocolKit/Sources/**/*.{h,m,swift,mm}",
+  "vendored_frameworks": "TBServiceProtocolKit.{framework,xcframework}",
+  "swift_version": "5.0"
+}
