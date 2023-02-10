@@ -1,0 +1,25 @@
+{
+  "name": "MZFormSheetPresentationController",
+  "version": "2.4.3",
+  "license": "MIT",
+  "summary": "MZFormSheetPresentationController provides an alternative to the native iOS UIModalPresentationFormSheet",
+  "homepage": "https://github.com/m1entus/MZFormSheetPresentationController",
+  "authors": "Michał Zaborowski",
+  "source": {
+    "http": "http://localhost:8080/frameworks/MZFormSheetPresentationController/2.4.3/zip",
+    "type": "zip"
+  },
+  "requires_arc": true,
+  "dependencies": {
+    "MZAppearance": [
+
+    ]
+  },
+  "source_files": "MZFormSheetPresentationController/*.{h,m}",
+  "platforms": {
+    "ios": "8.0"
+  },
+  "frameworks": "QuartzCore",
+  "vendored_frameworks": "MZFormSheetPresentationController.{framework,xcframework}",
+  "description": "converted automatically by plugin optimization"
+}
