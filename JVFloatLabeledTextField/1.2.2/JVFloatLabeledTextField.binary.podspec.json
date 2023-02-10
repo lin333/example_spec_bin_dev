@@ -24,6 +24,6 @@
     "UIKit"
   ],
   "requires_arc": true,
-  "vendored_frameworks": "JVFloatLabeledTextField.framework",
-  "description": "「   converted automatically by plugin cocoapods-bin  」"
+  "vendored_frameworks": "JVFloatLabeledTextField.{framework,xcframework}",
+  "description": "converted automatically by plugin optimization"
 }
