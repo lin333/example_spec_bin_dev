@@ -20,6 +20,6 @@
     "UIDeviceIdentifier/**/*.{h,m}"
   ],
   "public_header_files": "UIDeviceIdentifier/**/*.h",
-  "vendored_frameworks": "UIDeviceIdentifier.framework",
-  "description": "「   converted automatically by plugin cocoapods-bin  」"
+  "vendored_frameworks": "UIDeviceIdentifier.{framework,xcframework}",
+  "description": "converted automatically by plugin optimization"
 }
