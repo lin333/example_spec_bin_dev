@@ -1,0 +1,49 @@
+{
+  "name": "ChartKLineView",
+  "version": "8.0.7.0",
+  "summary": "老虎股票图表库",
+  "description": "converted automatically by plugin optimization\n 主要包括老虎股票基础图表Charts 及 技术指标计算",
+  "homepage": "https://git.tigerbrokers.net/luopengfei/TBChartViews",
+  "swift_versions": "5.0",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": "lpf",
+  "static_framework": true,
+  "pod_target_xcconfig": {
+    "DEFINES_MODULE": "YES"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source": {
+    "http": "http://localhost:8080/frameworks/ChartKLineView/8.0.7.0/zip",
+    "type": "zip"
+  },
+  "source_files": "ChartKLineView/**/*.{h,m,swift}",
+  "dependencies": {
+    "TBBaseKit": [
+
+    ],
+    "TBServiceProtocolKit": [
+
+    ]
+  },
+  "vendored_frameworks": "ChartKLineView.{framework,xcframework}",
+  "subspecs": [
+    {
+      "name": "Charts",
+      "source_files": "ChartKLineView/Charts/**/*.swift"
+    },
+    {
+      "name": "TechCal",
+      "source_files": "ChartKLineView/TechCal/**/*.swift"
+    },
+    {
+      "name": "TBChartUtils",
+      "source_files": "ChartKLineView/TBChartUtils/**/*.swift"
+    }
+  ],
+  "swift_version": "5.0"
+}
