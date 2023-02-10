@@ -1,0 +1,360 @@
+{
+  "name": "TigerBrokersKit",
+  "version": "8.0.2.0",
+  "summary": "A short description of TigerBrokersKit.",
+  "description": "converted automatically by plugin optimization\n TODO: Add long description of the pod here.",
+  "homepage": "https://git.tigerbrokers.net/donggongfu/TigerBrokersKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "donggf": "donggongfu@tigerbrokers.com"
+  },
+  "source": {
+    "http": "http://localhost:8080/frameworks/TigerBrokersKit/8.0.2.0/zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "TigerBrokersKit/Classes/TigerBrokersKit.h",
+  "public_header_files": "TigerBrokersKit/Classes/TigerBrokersKit.h",
+  "dependencies": {
+    "TBBaseKit": [
+
+    ]
+  },
+  "static_framework": true,
+  "pod_target_xcconfig": {
+    "DEFINES_MODULE": "YES"
+  },
+  "swift_versions": "5.0",
+  "vendored_frameworks": "TigerBrokersKit.{framework,xcframework}",
+  "subspecs": [
+    {
+      "name": "Core",
+      "source_files": "TigerBrokersKit/Classes/Core/TBKCore*.{h,pch}",
+      "public_header_files": "TigerBrokersKit/Classes/Core/TBKCore*.h",
+      "subspecs": [
+        {
+          "name": "Global",
+          "source_files": [
+            "TigerBrokersKit/Classes/Core/TBKVersion.{h,m}",
+            "TigerBrokersKit/Classes/Core/TigerBrokersKitVersion.{h,m}",
+            "TigerBrokersKit/Classes/Core/TBKGlobalCore*.{h,m}",
+            "TigerBrokersKit/Classes/Core/TBKAvailability.{h,m}"
+          ],
+          "public_header_files": [
+            "TigerBrokersKit/Classes/Core/TBKVersion.h",
+            "TigerBrokersKit/Classes/Core/TigerBrokersKitVersion.h",
+            "TigerBrokersKit/Classes/Core/TBKGlobalCore*.h",
+            "TigerBrokersKit/Classes/Core/TBKAvailability.h"
+          ]
+        },
+        {
+          "name": "Additions",
+          "source_files": [
+            "TigerBrokersKit/Classes/Core/NS{Array,Data,Date,MutableArray,MutableDictionary,Object,String}Additions.{h,m}",
+            "TigerBrokersKit/Classes/Core/*+TBKNetwork.{h,m}"
+          ],
+          "public_header_files": [
+            "TigerBrokersKit/Classes/Core/NS{Array,Data,Date,MutableArray,MutableDictionary,Object,String}Additions.h",
+            "TigerBrokersKit/Classes/Core/*+TBKNetwork.h"
+          ]
+        },
+        {
+          "name": "Debug",
+          "source_files": "TigerBrokersKit/Classes/Core/TBKDebug*.{h,m}",
+          "public_header_files": "TigerBrokersKit/Classes/Core/TBKDebug*.h"
+        },
+        {
+          "name": "Extension",
+          "source_files": "TigerBrokersKit/Classes/Core/TBKExtension*.{h,m}",
+          "public_header_files": "TigerBrokersKit/Classes/Core/TBKExtension{Loader,Info,Author}.h",
+          "private_header_files": "TigerBrokersKit/Classes/Core/TBKExtensionInfoPrivate.h"
+        },
+        {
+          "name": "EntityTables",
+          "source_files": "TigerBrokersKit/Classes/Core/TBKEntityTables.{h,m}",
+          "public_header_files": "TigerBrokersKit/Classes/Core/TBKEntityTables.h"
+        },
+        {
+          "name": "MarkupStripper",
+          "source_files": "TigerBrokersKit/Classes/Core/TBKMarkupStripper.{h,m}",
+          "public_header_files": "TigerBrokersKit/Classes/Core/TBKMarkupStripper.h"
+        }
+      ]
+    },
+    {
+      "name": "Network",
+      "source_files": "TigerBrokersKit/Classes/Network/TigerBrokersKitNetwork*.{h,pch}",
+      "public_header_files": "TigerBrokersKit/Classes/Network/TigerBrokersKitNetwork*.h",
+      "dependencies": {
+        "TigerBrokersKit/Core": [
+
+        ],
+        "AFNetworking": [
+          "~> 4.0"
+        ],
+        "Mantle": [
+          "~> 2.1.0"
+        ]
+      },
+      "subspecs": [
+        {
+          "name": "Global",
+          "source_files": [
+            "TigerBrokersKit/Classes/Network/TBKNetworkGlobal.{h,m}",
+            "TigerBrokersKit/Classes/Network/TTUserInfo.{h,m}",
+            "TigerBrokersKit/Classes/Network/TTErrorCodes.{h,m}"
+          ],
+          "public_header_files": [
+            "TigerBrokersKit/Classes/Network/TBKNetworkGlobal.h",
+            "TigerBrokersKit/Classes/Network/TTUserInfo.h",
+            "TigerBrokersKit/Classes/Network/TTErrorCodes.h"
+          ]
+        },
+        {
+          "name": "Model",
+          "source_files": [
+            "TigerBrokersKit/Classes/Network/TTModel*.{h,m}",
+            "TigerBrokersKit/Classes/Network/TTURLRequestModel.{h,m}"
+          ],
+          "public_header_files": [
+            "TigerBrokersKit/Classes/Network/TTModel*.h",
+            "TigerBrokersKit/Classes/Network/TTURLRequestModel.h"
+          ]
+        },
+        {
+          "name": "Response",
+          "source_files": [
+            "TigerBrokersKit/Classes/Network/TBKURLResponse.{h,m}",
+            "TigerBrokersKit/Classes/Network/TTURL*Response.{h,m}"
+          ],
+          "public_header_files": [
+            "TigerBrokersKit/Classes/Network/TBKURLResponse.h",
+            "TigerBrokersKit/Classes/Network/TTURL*Response.h"
+          ]
+        },
+        {
+          "name": "Request",
+          "source_files": [
+            "TigerBrokersKit/Classes/Network/TBKURLRequest*.{h,m}",
+            "TigerBrokersKit/Classes/Network/TBKRequestLoader.{h,m}",
+            "TigerBrokersKit/Classes/Network/TTURLRequestCachePolicy.h"
+          ],
+          "public_header_files": [
+            "TigerBrokersKit/Classes/Network/TBKURLRequest.h",
+            "TigerBrokersKit/Classes/Network/TBKURLRequest{Delegate,Queue}.h",
+            "TigerBrokersKit/Classes/Network/TTURLRequestCachePolicy.h"
+          ],
+          "private_header_files": [
+            "TigerBrokersKit/Classes/Network/TBKRequestLoader.h",
+            "TigerBrokersKit/Classes/Network/TBKURLRequestQueueInternal.h"
+          ]
+        },
+        {
+          "name": "Cache",
+          "source_files": "TigerBrokersKit/Classes/Network/TTURLCache.{h,m}",
+          "public_header_files": "TigerBrokersKit/Classes/Network/TTURLCache.h"
+        },
+        {
+          "name": "TODO",
+          "source_files": [
+            "TigerBrokersKit/Classes/Network/{CL,CT,LG}*.{h,m}",
+            "TigerBrokersKit/Classes/Network/Target_H5API.{h,m}",
+            "TigerBrokersKit/Classes/Network/TBKNetwork*.{h,m}"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "UICommon",
+      "source_files": [
+        "TigerBrokersKit/Classes/UICommon/TBKUICommon*.{h,pch}",
+        "TigerBrokersKit/Classes/UICommon/TBKGlobalUICommon.{h,m}"
+      ],
+      "public_header_files": [
+        "TigerBrokersKit/Classes/UICommon/TBKUICommon*.h",
+        "TigerBrokersKit/Classes/UICommon/TBKGlobalUICommon.h"
+      ],
+      "dependencies": {
+        "TigerBrokersKit/Core": [
+
+        ]
+      },
+      "subspecs": [
+        {
+          "name": "Controllers",
+          "source_files": "TigerBrokersKit/Classes/UICommon/TBKBaseViewController.{h,m}",
+          "public_header_files": "TigerBrokersKit/Classes/UICommon/TBKBaseViewController.h"
+        },
+        {
+          "name": "Additions",
+          "source_files": "TigerBrokersKit/Classes/UICommon/UI*.{h,m}",
+          "public_header_files": [
+            "TigerBrokersKit/Classes/UICommon/UISplitViewController+TBKNavigator.h",
+            "TigerBrokersKit/Classes/UICommon/UIView+TBKUICommon.h",
+            "TigerBrokersKit/Classes/UICommon/UIViewControllerAdditions.h",
+            "TigerBrokersKit/Classes/UICommon/UIWindowAdditions.h"
+          ],
+          "private_header_files": "TigerBrokersKit/Classes/UICommon/UIViewControllerGarbageCollection.h"
+        }
+      ]
+    },
+    {
+      "name": "UINavigator",
+      "source_files": [
+        "TigerBrokersKit/Classes/UINavigator/TBKUINavigator*.{h,pch}",
+        "TigerBrokersKit/Classes/UINavigator/TBKGlobalNavigatorMetrics.{h,m}",
+        "TigerBrokersKit/Classes/UINavigator/TBKURLObject.h"
+      ],
+      "public_header_files": [
+        "TigerBrokersKit/Classes/UINavigator/TigerBrokersKitUINavigator*.h",
+        "TigerBrokersKit/Classes/UINavigator/TBKGlobalNavigatorMetrics.h",
+        "TigerBrokersKit/Classes/UINavigator/TBKURLObject.h"
+      ],
+      "dependencies": {
+        "TigerBrokersKit/Core": [
+
+        ],
+        "TigerBrokersKit/UICommon": [
+
+        ]
+      },
+      "subspecs": [
+        {
+          "name": "ViewControllers",
+          "source_files": [
+            "TigerBrokersKit/Classes/UINavigator/TBKNavigatorViewController.{h,m}",
+            "TigerBrokersKit/Classes/UINavigator/TBKBaseNavigationController.{h,m}"
+          ],
+          "public_header_files": [
+            "TigerBrokersKit/Classes/UINavigator/TBKNavigatorViewController.h",
+            "TigerBrokersKit/Classes/UINavigator/TBKBaseNavigationController.h"
+          ]
+        },
+        {
+          "name": "Navigator",
+          "source_files": [
+            "TigerBrokersKit/Classes/UINavigator/TBKNavigatorPersistenceMode.h",
+            "TigerBrokersKit/Classes/UINavigator/TBKNavigatorRootContainer.h",
+            "TigerBrokersKit/Classes/UINavigator/TBKBaseNavigator.{h,m}",
+            "TigerBrokersKit/Classes/UINavigator/TBKNavigatorDelegate.h",
+            "TigerBrokersKit/Classes/UINavigator/TBKBaseNavigatorInternal.h"
+          ],
+          "public_header_files": [
+            "TigerBrokersKit/Classes/UINavigator/TBKNavigatorPersistenceMode.h",
+            "TigerBrokersKit/Classes/UINavigator/TBKNavigatorRootContainer.h",
+            "TigerBrokersKit/Classes/UINavigator/TBKBaseNavigator.h",
+            "TigerBrokersKit/Classes/UINavigator/TBKNavigatorDelegate.h"
+          ],
+          "private_header_files": "TigerBrokersKit/Classes/UINavigator/TBKBaseNavigatorInternal.h",
+          "subspecs": [
+            {
+              "name": "Additions",
+              "source_files": "TigerBrokersKit/Classes/UINavigator/UIViewController+*.{h,m}",
+              "public_header_files": "TigerBrokersKit/Classes/UINavigator/UIViewController+TBKNavigator.h",
+              "private_header_files": "TigerBrokersKit/Classes/UINavigator/UIViewController+TBKNavigatorGarbageCollection.h"
+            },
+            {
+              "name": "URLAction",
+              "source_files": "TigerBrokersKit/Classes/UINavigator/TBKURLAction.{h,m}",
+              "public_header_files": "TigerBrokersKit/Classes/UINavigator/TBKURLAction.h"
+            },
+            {
+              "name": "URLMap",
+              "source_files": [
+                "TigerBrokersKit/Classes/UINavigator/TBKURLMap.{h,m}",
+                "TigerBrokersKit/Classes/UINavigator/TBKNavigationMode.h"
+              ],
+              "public_header_files": [
+                "TigerBrokersKit/Classes/UINavigator/TBKURLMap.h",
+                "TigerBrokersKit/Classes/UINavigator/TBKNavigationMode.h"
+              ]
+            },
+            {
+              "name": "URLPattern",
+              "source_files": [
+                "TigerBrokersKit/Classes/UINavigator/TBKURLPattern.{h,m}",
+                "TigerBrokersKit/Classes/UINavigator/TBKURLPatternInternal.{h,m}"
+              ],
+              "public_header_files": "TigerBrokersKit/Classes/UINavigator/TBKURLPattern.h",
+              "private_header_files": "TigerBrokersKit/Classes/UINavigator/TBKURLPatternInternal.h",
+              "subspecs": [
+                {
+                  "name": "URLPatternText",
+                  "source_files": [
+                    "TigerBrokersKit/Classes/UINavigator/TBKURLPatternText.h",
+                    "TigerBrokersKit/Classes/UINavigator/TBKURLLiteral.{h,m}",
+                    "TigerBrokersKit/Classes/UINavigator/TBKURLWildCard.{h,m}"
+                  ],
+                  "public_header_files": [
+                    "TigerBrokersKit/Classes/UINavigator/TBKURLPatternText.h",
+                    "TigerBrokersKit/Classes/UINavigator/TBKURLLiteral.h",
+                    "TigerBrokersKit/Classes/UINavigator/TBKURLWildCard.h"
+                  ]
+                },
+                {
+                  "name": "URLArgumentType",
+                  "source_files": [
+                    "TigerBrokersKit/Classes/UINavigator/TBKURLArgumentType.h",
+                    "TigerBrokersKit/Classes/UINavigator/TBKURLArguments.{h,m}",
+                    "TigerBrokersKit/Classes/UINavigator/TBKURLSelector.{h,m}"
+                  ],
+                  "public_header_files": [
+                    "TigerBrokersKit/Classes/UINavigator/TBKURLArgumentType.h",
+                    "TigerBrokersKit/Classes/UINavigator/TBKURLArguments.h",
+                    "TigerBrokersKit/Classes/UINavigator/TBKURLSelector.h"
+                  ]
+                },
+                {
+                  "name": "Patterns",
+                  "source_files": "TigerBrokersKit/Classes/UINavigator/TBKURL{Generator,Navigator}Pattern.{h,m}",
+                  "public_header_files": "TigerBrokersKit/Classes/UINavigator/TBKURL{Generator,Navigator}Pattern.h"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "UI",
+      "dependencies": {
+        "TigerBrokersKit/Core": [
+
+        ],
+        "TigerBrokersKit/Network": [
+
+        ],
+        "TigerBrokersKit/UICommon": [
+
+        ],
+        "TigerBrokersKit/UINavigator": [
+
+        ]
+      },
+      "subspecs": [
+        {
+          "name": "Additions",
+          "source_files": "TigerBrokersKit/Classes/UI/UI*Additions.{h,m}",
+          "public_header_files": "TigerBrokersKit/Classes/UI/UI*Additions.h"
+        },
+        {
+          "name": "Navigator",
+          "source_files": "TigerBrokersKit/Classes/UI/TBKNavigator*.{h,m}",
+          "public_header_files": "TigerBrokersKit/Classes/UI/TBKNavigator.h}",
+          "private_header_files": "TigerBrokersKit/Classes/UI/TBKNavigatorWindow.h"
+        },
+        {
+          "name": "ViewControllers",
+          "source_files": "TigerBrokersKit/Classes/UI/TBKNavigationController.{h,m}",
+          "public_header_files": "TigerBrokersKit/Classes/UI/TBKNavigationController.h"
+        }
+      ]
+    }
+  ],
+  "swift_version": "5.0"
+}
