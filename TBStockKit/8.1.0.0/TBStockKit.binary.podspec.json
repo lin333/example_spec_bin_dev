@@ -1,0 +1,52 @@
+{
+  "name": "TBStockKit",
+  "version": "8.1.0.0",
+  "summary": "TBStockKit",
+  "description": "converted automatically by plugin optimization\n 行情组件",
+  "homepage": "https://git.tigerbrokers.net/ios/TBStockKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "chenxin": "chenxin@tigerbrokers.com"
+  },
+  "source": {
+    "http": "http://localhost:8080/frameworks/TBStockKit/8.1.0.0/zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "source_files": "TBStockKit/Classes/**/*.{h,m,swift,mm}",
+  "static_framework": true,
+  "pod_target_xcconfig": {
+    "DEFINES_MODULE": "YES"
+  },
+  "swift_versions": "5.0",
+  "dependencies": {
+    "TBBaseKit": [
+
+    ],
+    "DateTools": [
+
+    ],
+    "MJExtension": [
+
+    ],
+    "TBServiceProtocolKit": [
+
+    ],
+    "TBNetworking": [
+
+    ],
+    "Number": [
+
+    ],
+    "JSONModel": [
+
+    ]
+  },
+  "vendored_frameworks": "TBStockKit.{framework,xcframework}",
+  "swift_version": "5.0"
+}
