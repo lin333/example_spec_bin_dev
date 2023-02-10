@@ -1,0 +1,83 @@
+{
+  "name": "TBThirdParty",
+  "version": "8.1.0.0",
+  "summary": "This is a local repository for Tiger Brokers include some third party codes",
+  "description": "converted automatically by plugin optimization\n This is a local repository for Tiger Brokers include some third party codes, such as TTNavigator.",
+  "homepage": "https://git.tigerbrokers.net/ios/tbthirdparty",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "yangfan": "yangfan@tigerbrokers.com"
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "source": {
+    "http": "http://localhost:8080/frameworks/TBThirdParty/8.1.0.0/zip",
+    "type": "zip"
+  },
+  "ios": {
+    "vendored_frameworks": "Sources/*.framework"
+  },
+  "static_framework": true,
+  "pod_target_xcconfig": {
+    "DEFINES_MODULE": "YES"
+  },
+  "swift_versions": "5.0",
+  "dependencies": {
+    "TBBaseKit": [
+
+    ],
+    "Masonry": [
+
+    ]
+  },
+  "vendored_frameworks": "TBThirdParty.{framework,xcframework}",
+  "subspecs": [
+    {
+      "name": "LBPhotoBrowser",
+      "dependencies": {
+        "SDWebImage": [
+
+        ],
+        "SDWebImageFLPlugin": [
+          "0.3.0"
+        ]
+      },
+      "source_files": "Sources/LBPhotoBrowser/*.{h,m,swift,mm}",
+      "resources": "Sources/LBPhotoBrowser/*.{jpg,png}"
+    },
+    {
+      "name": "MMPickerView",
+      "source_files": "Sources/MMPickerView/*.{h,m,swift,mm}"
+    },
+    {
+      "name": "HMSegmentedControl",
+      "source_files": "Sources/HMSegmentedControl/*.{h,m,swift,mm}"
+    },
+    {
+      "name": "YYText",
+      "source_files": "Sources/YYText/**/*.{h,m,swift,mm}"
+    },
+    {
+      "name": "SGQRCodeScanningVC",
+      "resources": "Sources/SGQRCodeScanningVC/**/*.bundle",
+      "source_files": "Sources/SGQRCodeScanningVC/**/*.{h,m,swift,mm}"
+    },
+    {
+      "name": "GMenuController",
+      "source_files": "Sources/GMenuController/**/*.{h,m,swift,mm}"
+    },
+    {
+      "name": "CRRulerControl",
+      "source_files": "Sources/CRRulerControl/**/*.{h,m,swift,mm}"
+    },
+    {
+      "name": "ActionSheetPicker-3.0",
+      "source_files": "Sources/ActionSheetPicker-3.0/**/*.{h,m,swift,mm}"
+    }
+  ],
+  "swift_version": "5.0"
+}
