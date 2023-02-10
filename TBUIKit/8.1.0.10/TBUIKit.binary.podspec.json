@@ -1,0 +1,89 @@
+{
+  "name": "TBUIKit",
+  "version": "8.1.0.10",
+  "summary": "A short description of TBUIKit.",
+  "description": "converted automatically by plugin optimization\n TODO: Add long description of the pod here.",
+  "homepage": "https://git.tigerbrokers.net/ios/TBUIKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "972867381@qq.com": "linbingjie@itiger.com"
+  },
+  "source": {
+    "http": "http://localhost:8080/frameworks/TBUIKit/8.1.0.10/zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "prefix_header_contents": "#import <Masonry/Masonry.h>",
+  "source_files": "TBUIKit/Classes/**/*.{h,m,swift,mm}",
+  "resources": [
+    "TBUIKit.framework/Resources/*.bundle",
+    "TBUIKit.framework/Resources/*.{plist,png,json,xib}",
+    "TBUIKit.framework/Versions/A/Resources/*.bundle",
+    "TBUIKit.framework/Versions/A/Resources/*.{plist,png,json,xib}"
+  ],
+  "static_framework": true,
+  "pod_target_xcconfig": {
+    "DEFINES_MODULE": "YES"
+  },
+  "swift_versions": "5.0",
+  "dependencies": {
+    "ChartKLineView": [
+
+    ],
+    "Masonry": [
+
+    ],
+    "Reachability": [
+
+    ],
+    "MJRefresh": [
+      "~> 3.4.3"
+    ],
+    "lottie-ios": [
+      "~> 2.5.0"
+    ],
+    "TTTAttributedLabel": [
+
+    ],
+    "ReactiveObjC": [
+
+    ],
+    "MZFormSheetPresentationController": [
+
+    ],
+    "JVFloatLabeledTextField": [
+
+    ],
+    "libpag": [
+
+    ],
+    "JXCategoryView": [
+
+    ],
+    "JSONModel": [
+
+    ],
+    "DateTools": [
+
+    ],
+    "TigerBrokersKit": [
+
+    ],
+    "TBThirdParty": [
+
+    ],
+    "TBStockKit": [
+
+    ],
+    "TBBaseKit": [
+
+    ]
+  },
+  "vendored_frameworks": "TBUIKit.{framework,xcframework}",
+  "swift_version": "5.0"
+}
